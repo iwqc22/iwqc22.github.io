@@ -1,1 +1,429 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-transform"> 
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    <link rel="stylesheet" href="Style/style.css" type="text/css">
+    <!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssrest-context-min.css">-->
+    <link rel="shortcut icon" type="image/png" href="Image/favicon.png">
+    <script type="text/javascript" src="Style/style.js"></script>
+    <title>ACM/IEEE SEC 2022</title>
+    <style type="text/css">
+    .auto-style2 {
+        text-align: center;
+    }
+    .auto-style3 {
+        text-align: center;
+        color: #00C;
+    }
+    .auto-style4 {
+        font-family: Verdana;
+        text-decoration: line-through;
+    }
+    .auto-style5 {
+        color: #0000FF;
+    }
+    .auto-style6 {
+        background-color: #FFFFFF;
+    }
+    .auto-style7 {
+        color: #FF0000;
+        background-color: #FFFFFF;
+    }
+    .auto-style8 {
+        color: #000000;
+    }
+    .auto-style9 {
+        text-align: left;
+    }
+    
+    .content_class {
+        max-width: 840px;
+        padding: 0;
+        margin-left: 9em;
+        padding-left: 5px;
+        border-left: 3px solid #bbb;
+        text-align: justify;
+        font: 10pt Verdana, Tahoma, Sans-Serif;
+    }
+    
+    .alist {
+        border-spacing: 4px;
+        width: 100%;
+    }
+    .alist th {
+        border-right: 3px solid #bbb;
+        text-align: right;
+        padding-right: 0.7em;
+        width: 8em;
+    }
+    .alist td.heading {
+        border: 1px solid;
+    }
+    .alist td.indent1 { 
+      background-color: #cde;
+    }
+    .alist td.indent2 { 
+      border: 1px dashed;
+      padding-left: 2em;
+    }
+    .alist .empty {
+        height: 1.5em;
+    }
+    .alist td.paper {
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    .alist .hltablerow:hover {
+        background: #eee;
+        cursor: default;
+        margin-bottom: 10em;
+    }
+    
+    #nav {
+        position: relative;
+        float: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 1em;
+        text-align: right;
+        width: 7.5em;
+    }
+    #nav a {
+        display: block;
+        padding: 0.5em;
+        border: 1px solid #fff;
+        margin: 0;
+        margin-right: 3px;
+    }
+    #nav a.selected {
+        background: #eee;
+        border-color: #ddd;
+    }
+    #nav a:hover {
+        text-decoration: none;
+        color: navy;
+    }
+    #nav a.good:hover {
+        background: #bbf;
+        border: 1px solid #55f;
+    }
+    
+    @media(max-width:960px)
+    {
+      body {width:100%;} 
+      #contents{width:100%} 
+      #contents img{max-width:90%} 
+    }
+    </style>
+    
+    <script type="text/javascript">
+        window.onload=function(){}	
+    </script>
+    <script src="Style/settings.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style/cookieconsent.min.css">
+    <script src="Style/cookieconsent.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/ieeeshutpages/gdpr/settings.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise(json)
+        });
+    
+        var contentArray = document.getElementsByName("content_program");
+        var goodArray = document.getElementsByName("good");
+    
+        function showCurrent(currentObject){
+            for (i = 0; i < goodArray.length; i++) { 
+                contentArray[i].style.display="none";
+            }
+            document.getElementById(currentObject.type).style.display="block";
+            for (i = 0; i < goodArray.length; i++) { 
+                goodArray[i].style.background = "white";
+            }
+            document.getElementById(currentObject.id).style.background="#CCDDEE";
+        }
+    </script>
+    <style type="text/css">@media print{div[id*="composai"] *{display:none !important}}
+    </style><style data-styled="" data-styled-version="4.3.2"></style><style></style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1074.0" data-gr-ext-installed=""><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-170793312  cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">IEEE websites place cookies on your device to give you the best user experience. By using our websites, you agree to the placement of these cookies. To learn more, read our <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.ieee.org/about/help/security_privacy.html" target="_blank">Privacy Policy.</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Accept &amp; Close</a></div><!--googleon: all--></div>
+
+    <div id="top" bgcolor="#FFFFFF">
+       <div id="header" style="left: 0px; top: 0px; width: 810px">
+        <table>
+          <tbody><tr>
+            <th>
+              <img src="Image/sec-logo.png" alt="logo" height="80">
+            </th>
+            <th bgcolor="white" width="660" align="left">
+              <p style="font-family:Times;font-size:150%;color:#000080">The Seventh ACM/IEEE Symposium on Edge Computing</p>
+              <p style="font-family:Times;font-size:120%;color:#000080">Seattle, WA, December 5-8, 2022</p>
+            </th>
+          </tr>
+        </tbody></table>
+       </div><!-- /#header -->
+    
+    
+        <!--<div id="icatch"><img src="image1.png" height="202" width="202"><img src="image2.jpg" height="202" width="202"><img src="image3.jpg" height="202" width="202"><img src="image4.png" alt="" height="202" width="202"></div>-->
+        <div id="icatch">
+        <div id="icatch"><img src="Image/seattle1.jpg" height="179"><img src="Image/image2_2.jpg" height="179"><img src="Image/seattle2.jpeg" height="179"></div>
+        <!--<img src='Image/castillo-de-san-jose-2432927_1920.jpg' alt='Image by lapping from Pixabay' height='192'>-->
+        <!--<img src='Image/DoubleTree.jpg' alt='' height='188'>-->
+        <!--<img src='Image/DSC00290.JPG' alt='' height='188'>-->
+        <!--<img src='Image/DSC04532.JPG' height='192'>-->
+        <!--<img src='Image/DSC_7639-min.jpeg' alt='' height='188'>-->
+        <!--<img src='Image/san-jose-86230_1920.jpg' alt='Image by David Mark from Pixabay' height='192'>-->
+        <!--<img src='Image/the-white-house-1623005_1920.jpg' alt='Photo by Pixabay License' height='176'>-->
+        </div>
+        
+        <!--<img src='Image/architecture-attractions-building-208702.jpg' alt='Photo by Samad Ismayilov from Pexels' height='176'></div>-->
+        <div id="menu" style="width: 810px; height: 31px">
+           <ul>
+              <li><strong><a href="./index.php">HOME</a></strong></li>
+              <!--<li><strong><a href="./program.php">Program</a></strong></li>-->
+              <!--<li><strong><a href="./keynote and panel.php">Keynote and Panel</a></strong></li>-->
+              <!--<li><strong><a href="./proceedings.php">Proceedings</a></strong></li>-->
+              <li><strong><a href="./committees.php">Committees</a></strong></li>
+             <li><strong><a href="./workshop.php">Workshops</a></strong></li>
+             <!--<li><div class="dropdown">-->
+       <!--         <a href="#" class="dropbtn"><b>Special Events</b></a>-->
+       <!--             <div class="dropdown-content">-->
+       <!--                 <a href="./postersession.php"><b>Poster Session</b></a>-->
+       <!--                 <a href="./phdforum.php"><b>PhD Forum</b></a>-->
+       <!--                 <a href="./women_in_computing.php"><b>Women in Computing</b></a>-->
+       <!--             </div>-->
+       <!--     </div></li>-->
+            <!--<li><strong><a href="./postersession.php">Poster Session</a></strong></li>-->
+             <!--<li><strong><a href="./women_in_computing.php">Women in Computing</a></strong></li>-->
+             <!--<li><strong><a href="./camera ready.php">Camera Ready</a></strong></li>-->
+            <!--<li><strong><a href="./submission.html">Submissions</a></strong></li>-->
+              <li><strong><a href="./attend.php">Attend</a></strong></li>
+              <!--<li><strong><a href="./travel.php">Student Travel Grant</a></strong></li>-->
+              <li><strong><a href="./call for papers.php">Call for Papers</a></strong></li>
+              <li><strong><a href="./tiot-call.php">Call for Journal Paper Presentations</a></strong></li>
+              <!--<li><strong><a href="./submission.php">Submission Instructions</a></strong></li>-->
+              <li><strong><a href="./call for posters.php">Call for Posters/Demos</a></strong></li>
+              <li><strong><a href="./phdforum.php">PhD Forum</a></strong></li>
+              <!--<li><strong><a href="./about.php">About</a></strong></li>-->
+        </ul>
+      </div><!-- /#menu -->
+       
+        <div id="contents">
+           <div id="main">
+                <br>
+                <br>
+                <h2 class="auto-style3">The 3rd Workshop on Edge Computing and Communications (EdgeComm)<br></h2>
+                
+                <br>
+                <br>
+                <h3><strong>Call for Papers</strong> </h3>
+                <p style="text-align:justify">
+                Edge computing emerges as a critical technology component of modern Information and Communication Technology (ICT) industry provisioning storage and computation resources 
+                in the proximity of end devices to provide low latency services. By incorporating storage and computation resources in networks, joint allocation and management of 
+                communication, computing and storage resources will improve the quality of service and user experience, especially for various delay-sensitive applications. The 
+                advancement of edge computing poses many challenges, such as deployment and management of distributed resources. Furthermore, end devices may be mobile all the 
+                time and their requests may also change over time, creating spatial and temporal dynamics of workloads in the network. The edge computing system itself also exhibits
+                high dynamics in aspects of network channel conditions, computation and data storage capacities, making system and resource management challenging. The objective of 
+                this workshop is to explore recent advances in edge computing systems as well as their associated communication strategies to address the fundamental and practical 
+                challenges through disseminations of the state-of-the-art research and discussions between researchers and practitioners in both computing and communication societies. 
+                The workshop will be co-located with the sixth ACM/IEEE Symposium on Edge Computing (SEC), December 5-8, 2022, in Seattle WA, USA.
+                </p>
+                <br>
+                <p style="text-align:justify">We invite submissions of the novel research on communication and computing design aspects of edge computing, including but not limited to: </p>
+                  <ul>
+                      <li>Edge computing infrastructure and edge-enabled applications</li>
+                      <li>Computing and communication architecture for edge computing and devices</li>
+                      <li>Workload offloading for edge computing systems</li>
+                      <li>Resource management and reliability for edge computing</li>
+                      <li>Energy efficiency of edge computing</li>
+                      <li>Algorithms and techniques for federated/machine learning and artificial intelligence at the edge</li>
+                      <li>Novel computing and communications models</li>
+                      <li>In-network computing and storage</li>
+                      <li>Computing and communication system co-designs for edge computing</li>
+                      <li>Deployment and application placement in edge computing</li>
+                      <li>Secure and safe computing and communications</li>
+                      <li>Data privacy preserving computing and communications</li>
+                      <li>Cooperative aerial edge computing and communication systems</li>
+                      <li>Resource allocation for vehicular edge computing</li>
+                      <li>Blockchain-enabled edge computing systems</li>
+                      <li>Orchestra of edge computing, caching, learning and communications</li>
+                      <li>Experimental testbed and prototype design and development for edge computing</li>
+                  </ul>
+                <h3><strong>Submission Guidelines</strong> </h3>
+                
+                <p style="text-align:justify">Authors should follow the IEEE guidelines when preparing their contributions (maximum paper length: 5 pages with 10-pt font: 
+                <a href="https://www.ieee.org/conferences/publishing/templates.html">https://www.ieee.org/conferences/publishing/templates.html</a>). 
+                  All accepted papers will appear in ACM Digital Library (<a href="https://dl.acm.org/">https://dl.acm.org/</a>).</p>
+                <br>
+                <p><strong>Submission website: </strong>https://edgecomm22.hotcrp.com/</p> 
+    
+                <br>
+                <h3><a name="impordate"><strong>Important Dates</strong></a></h3>
+               
+                <p>Deadline for Submission: September 15, 2022, 11:59PM EDT<!--(<font color="red">extended</font>) <s> </s> --></p>
+                <br>
+                <p>Notifications of Acceptance: October 1, 2022</p>
+                <br>
+                <p>Camera-ready Paper Submission: October 15, 2022 (firm)</p>
+                <br>
+                <p>Workshop Date: December 8,  2022</p>
+    
+                 <br>
+                <br>
+                
+                <h3><a name="organizers"><strong>Workshop Organizers:</strong></a></h3>
+                <br>
+                
+                <p><strong>Workshop co-chairs</strong></p>
+                <p><a href="https://computing.ece.vt.edu/~lingjialiu/doku.php">Lingjia Liu</a>, Virginia Tech, USA</p>
+                <p><a href="https://www.pitt.edu/~weigao/">Wei Gao</a>, University of Pittsburgh, USA</p>            
+                <br>
+                
+                <p><strong>Technical Program Committee Chair:</strong></p>
+                <p><a href="">Yang Peng</a>, University of Washington Bothell, USA</p>
+                <br>
+    
+                <!--<p><strong>Technical Program Committee:</strong></p>-->
+                <!--<p><a href="http://www.ece.virginia.edu/~cs7dt/">Cong Shen (TPC Chair)</a>, University of Virginia, USA</p>-->
+                <!--<p><a href="http://www.ece.virginia.edu/~cs7dt/">Cong Shen (TPC Chair)</a>, University of Virginia, USA</p>-->
+                <!--<p><a href="http://www.ee.psu.edu/yang/">Jing Yang</a>, The Pennsylvania State University, USA</p>-->
+                <!--<p><a href="https://www.andrew.cmu.edu/user/pspillai/">Padmanabhan Pillai</a>, Carnegie Mellon University, USA</p>-->
+                <!--<p><a href="https://quyuanluo.github.io/">Quyuan Luo</a>, Southwest Jiaotong University, China</p>-->
+                <!--<p><a href="">Shuo Shao</a>, Shanghai Jiao Tong University, China</p>-->
+                <!--<p><a href="https://www.nist.gov/people/susanna-mosleh">Susanna Mosleh</a>, National Institute of Standards and Technology, USA</p>-->
+                <!--<p><a href="">Xiang Chen</a>, Sun Yat-Sen University, China</p>-->
+                <!--<p><a href="http://users.ece.cmu.edu/~yuejiec/">Yuejie Chi</a>, Carnegie Mellon University, USA</p>-->
+                <!--<p><a href="https://csalab.site/">Zhuo Lu</a>, University of South Florida, USA</p>-->
+                <!--<br>-->
+                
+                
+                <p><strong>Publicity Chair</strong></p>
+                <p><a href="">Alaa Alsaeedy</a>, Virginia Tech, USA</p>
+                <!--<p><a href="https://www.u-tokyo.ac.jp/focus/en/people/k0001_01407.html">Ping Du</a>, University of Tokyo, Japan</p>-->
+                <br>
+                
+                <!--<p><strong>Web Chair</strong></p>-->
+                <!--<p><a href="https://scholars.duke.edu/person/ang.li630">Ang Li</a>, Duke University</p>-->
+                <!--<br>-->
+                <!--<br>-->
+       
+                
+       <!--         <p><strong>Technical Program Committee</strong></p>-->
+                <!--- <p><a href="http://www.google.com"> PLACE HOLDER </a>, Institution</p> -->
+                <!--TBD	-->
+       <!--         <br>-->
+       <!--         <br>-->
+       <!--         <br>-->
+       <!--         <br>-->
+                
+             </div>
+        <div id="sub">
+        <h2>Navigation bar</h2>
+            <br>
+            <p><a href="#impordate">Important Dates</a></p>
+            <br>
+          <p><a href="#organizers">Workshop Organizers</a></p>
+          <br>
+          <p color="#000088">&nbsp;</p>
+            
+            </div><!-- /#sub -->
+        </div><!-- /#contents -->
+    <!--<div id="footer">-->
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <div id="footer">
+     
+     <hr>
+      <!--   <p><strong><font>In Cooperation</font></strong></p>-->
+      <!--  <p align="center">-->
+            <!--<p>TBA</p>-->
+      <!--      <a href="https://aecc.org/"><img src="Image/logo_CMYK.jpg" width="20%" alt="AECC" align="bottom" vspace="15"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="http://www.usenix.org"><img src="https://www.usenix.org/sites/default/files/usenix310x100.png" width="25%" alt="The USENIX Association" align="bottom" vspace="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="https://www.us-ignite.org/"><img src="usignite.jpeg" width="25%" alt="usignite" align="bottom" vspace="30"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+      <!--  </p>-->
+        <p><strong><font>Conference Sponsorship</font></strong></p>
+        <p align="center"> 
+    
+             <a href="https://www.acm.org/" target="_blank"><font face="Arial"><img src="Image/acm.png" width="25%" align="bottom" vspace="25"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
+            <a href="http://www.sigmobile.org/" target="_blank"><font face="Arial"><img src="Image/sigmobile.gif" width="8%" align="bottom" vspace="28"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.nsf.gov/" target="_blank"><font face="Arial"><img src="Image/nsf-logo.png" width="10%" align="bottom"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.ieee.org" target="_blank"><font face="Arial"> <img src="Image/IEEE.gif" width="16%" align="bottom" vspace="17"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+              <a href="http://www.computer.org/web/tci/index" target="_blank"><font face="Arial"><img src="Image/IEEE-CS_LogoTM-orange.png" width="20%" align="bottom" vspace="20"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!--		<a href="http://en.ecconsortium.org/" target="_blank"><font face="Arial"><img src="Logo_ECC.jpg" width="22%" align="bottom" vspace="20"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+              
+        </p>
+        <!--<p><strong><font color="#58ABDC">Diamond Sponsors</font></strong></p>-->
+        <!--<p align="center">-->
+            
+            <!--<a href="https://www.microsoft.com/en-us/" target="_blank"><font face="Arial"><img src="microsoft.jpg" width="30%" align="bottom" vspace="17"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+        <!--    <a href="https://www.nsf.gov/" target="_blank"><font face="Arial"><img src="Image/nsf-logo.png"  width="10%" align="bottom"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+        <!--</p>-->
+        <p><strong><font color="#11B2A0">Platinum Sponsors</font></strong></p>
+        <p align="center">
+            <a href="https://aecc.org/"><img src="Image/logo_CMYK.jpg" width="20%" alt="AECC" align="bottom" vspace="15"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--<a href="http://www.baidu.com/" target="_blank"><font face="Arial"><img src="Image/baidu_logo.png" width="25%" align="bottom" vspace="12" ></font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="https://www.microsoft.com/en-us/" target="_blank"><font face="Arial"><img src="Image/microsoft.jpg" width="25%" align="bottom" vspace="5"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    
+            <!--<a href="https://www.toyota-itc.com/" target="_blank"><font face="Arial"><img src="Image/corp_2_logo_re_wh.gif" width="25%" align="bottom" vspace="15" ></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            
+            <!--<a href="https://www.huawei.com/en/" target="_blank"><font face="Arial"><img src="Image/huawei.svg" width="20%" align="bottom" vspace="15"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            
+            <!--<a href="https://www.ibm.com/us-en/" target="_blank"><font face="Arial"><img src="ibm.jpeg" width="20%" align="bottom" vspace="20"></font></a>-->
+        </p>
+       
+        <p><strong><font color="#Ccc333">Gold Sponsors</font></strong></p>
+        <p align="center">
+            <a href="https://www.toyota-itc.com/" target="_blank"><font face="Arial"><img src="Image/corp_2_logo_re_wh.gif" width="25%" align="bottom" vspace="15"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--<a href="https://www.akamai.com/" target="_blank"><font face="Arial"><img src="Image/Akamai.png" width="20%" align="bottom" vspace="30"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="https://www.denso.com/global/en/" target="_blank"><font face="Arial"><img src="Image/denso.svg" width="16%" align="bottom" vspace="17"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank"><font face="Arial"><img src="Image/intel.png" hspace="15" border="0" height="66" width="81"></font></a>-->
+    
+            <!--<a href="" target="_blank"><font face="Arial"><img src="AMD.png" width="20%" align="bottom" vspace="20"> </font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--<a href="https://www.denso.com/global/en/" target="_blank"><font face="Arial"><img src="denso.svg" width="16%" align="bottom" vspace="17"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--<br>-->
+                <!--<a href="https://www.vmware.com/" target="_blank"><font face="Arial"><img src="Vmware.png" width="20%" align="bottom" vspace="20" ></font></a>-->
+                
+        </p>
+        <!--<br>-->
+        <!--<p><strong><font color="#75A4A2">Silver Sponsors</font></strong></p>-->
+        <!--<p align="center">-->
+            <!--<a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank"><font face="Arial"><img src="Image/intel.png" hspace="15" border="0" height="66" width="81"></font></a>-->
+            <!--<p></p>-->
+            <!--<a href="" target="_blank"><font face="Arial"><img src="AMD.png" width="20%" align="bottom" vspace="20"> </font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="http://www.baidu.com/" target="_blank"><font face="Arial"><img src="baidu_logo.png" width="25%" align="bottom" vspace="10" ></font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--<a href="https://www.denso.com/global/en/" target="_blank"><font face="Arial"><img src="denso.svg" width="16%" align="bottom" vspace="17"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--<br>-->
+            <!--<a href="https://www.vmware.com/" target="_blank"><font face="Arial"><img src="Image/Vmware.png" width="20%" align="bottom" vspace="20" ></font></a>-->
+                
+        <!--</p>-->
+        <br>
+        <p><strong><font color="#75A4A2">Bronze Sponsors</font></strong></p>
+        <p align="center">
+            <!--<a href="http://www.intel.com/content/www/us/en/homepage.html" target="_blank"><font face="Arial"><img src="Image/intel.png" hspace="15" border="0" height="66" width="81"></font></a>-->
+            <!--<p></p>-->
+            <!--<a href="" target="_blank"><font face="Arial"><img src="AMD.png" width="20%" align="bottom" vspace="20"> </font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <!--<a href="http://www.baidu.com/" target="_blank"><font face="Arial"><img src="baidu_logo.png" width="25%" align="bottom" vspace="10" ></font></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--<a href="https://www.denso.com/global/en/" target="_blank"><font face="Arial"><img src="denso.svg" width="16%" align="bottom" vspace="17"></font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--<br>-->
+            <a href="https://www.zenlayer.com/" target="_blank"><font face="Arial"><img src="Image/zenlayer_logo_Logo.jpeg" width="25%" align="bottom" vspace="15"></font></a>
+                
+        </p>
+     </div><!-- /#footer -->
+         
+    <!--</div><!-- /#wrapper -->
+    
+    </div><div id="composai-root"><div id="composai-app"></div></div>
+</body>
+<div id="composai-cards" style="position: absolute; top: 0px; left: 0px;"></div>
